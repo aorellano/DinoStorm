@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00865EB26E175E800FCF12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00865EA26E175E800FCF12E /* AppDelegate.swift */; };
+		D00865ED26E175E800FCF12E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00865EC26E175E800FCF12E /* SceneDelegate.swift */; };
+		D00865EF26E175E800FCF12E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00865EE26E175E800FCF12E /* HomeController.swift */; };
+		D00865F226E175E800FCF12E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00865F026E175E800FCF12E /* Main.storyboard */; };
+		D00865F426E175EB00FCF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00865F326E175EB00FCF12E /* Assets.xcassets */; };
+		D00865F726E175EB00FCF12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00865F526E175EB00FCF12E /* LaunchScreen.storyboard */; };
+		D008660226E175EC00FCF12E /* DinoStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008660126E175EC00FCF12E /* DinoStormTests.swift */; };
+		D008660D26E175EC00FCF12E /* DinoStormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008660C26E175EC00FCF12E /* DinoStormUITests.swift */; };
+		D008661B26E1842B00FCF12E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008661A26E1842B00FCF12E /* HomeView.swift */; };
+		D008661D26E1865200FCF12E /* WeatherDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008661C26E1865200FCF12E /* WeatherDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D00865FE26E175EC00FCF12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00865DF26E175E800FCF12E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00865E626E175E800FCF12E;
+			remoteInfo = DinoStorm;
+		};
+		D008660926E175EC00FCF12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00865DF26E175E800FCF12E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00865E626E175E800FCF12E;
+			remoteInfo = DinoStorm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D00865E726E175E800FCF12E /* DinoStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00865EA26E175E800FCF12E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D00865EC26E175E800FCF12E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D00865EE26E175E800FCF12E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D00865F126E175E800FCF12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D00865F326E175EB00FCF12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D00865F626E175EB00FCF12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D00865F826E175EB00FCF12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00865FD26E175EC00FCF12E /* DinoStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008660126E175EC00FCF12E /* DinoStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoStormTests.swift; sourceTree = "<group>"; };
+		D008660326E175EC00FCF12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D008660826E175EC00FCF12E /* DinoStormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoStormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008660C26E175EC00FCF12E /* DinoStormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoStormUITests.swift; sourceTree = "<group>"; };
+		D008660E26E175EC00FCF12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D008661A26E1842B00FCF12E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D008661C26E1865200FCF12E /* WeatherDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00865E426E175E800FCF12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00865FA26E175EC00FCF12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D008660526E175EC00FCF12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00865DE26E175E800FCF12E = {
+			isa = PBXGroup;
+			children = (
+				D00865E926E175E800FCF12E /* DinoStorm */,
+				D008660026E175EC00FCF12E /* DinoStormTests */,
+				D008660B26E175EC00FCF12E /* DinoStormUITests */,
+				D00865E826E175E800FCF12E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D00865E826E175E800FCF12E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D00865E726E175E800FCF12E /* DinoStorm.app */,
+				D00865FD26E175EC00FCF12E /* DinoStormTests.xctest */,
+				D008660826E175EC00FCF12E /* DinoStormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00865E926E175E800FCF12E /* DinoStorm */ = {
+			isa = PBXGroup;
+			children = (
+				D00865EA26E175E800FCF12E /* AppDelegate.swift */,
+				D00865EC26E175E800FCF12E /* SceneDelegate.swift */,
+				D00865EE26E175E800FCF12E /* HomeController.swift */,
+				D00865F026E175E800FCF12E /* Main.storyboard */,
+				D00865F326E175EB00FCF12E /* Assets.xcassets */,
+				D00865F526E175EB00FCF12E /* LaunchScreen.storyboard */,
+				D00865F826E175EB00FCF12E /* Info.plist */,
+				D008661A26E1842B00FCF12E /* HomeView.swift */,
+				D008661C26E1865200FCF12E /* WeatherDetails.swift */,
+			);
+			path = DinoStorm;
+			sourceTree = "<group>";
+		};
+		D008660026E175EC00FCF12E /* DinoStormTests */ = {
+			isa = PBXGroup;
+			children = (
+				D008660126E175EC00FCF12E /* DinoStormTests.swift */,
+				D008660326E175EC00FCF12E /* Info.plist */,
+			);
+			path = DinoStormTests;
+			sourceTree = "<group>";
+		};
+		D008660B26E175EC00FCF12E /* DinoStormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D008660C26E175EC00FCF12E /* DinoStormUITests.swift */,
+				D008660E26E175EC00FCF12E /* Info.plist */,
+			);
+			path = DinoStormUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00865E626E175E800FCF12E /* DinoStorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008661126E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStorm" */;
+			buildPhases = (
+				D00865E326E175E800FCF12E /* Sources */,
+				D00865E426E175E800FCF12E /* Frameworks */,
+				D00865E526E175E800FCF12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinoStorm;
+			productName = DinoStorm;
+			productReference = D00865E726E175E800FCF12E /* DinoStorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D00865FC26E175EC00FCF12E /* DinoStormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008661426E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStormTests" */;
+			buildPhases = (
+				D00865F926E175EC00FCF12E /* Sources */,
+				D00865FA26E175EC00FCF12E /* Frameworks */,
+				D00865FB26E175EC00FCF12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00865FF26E175EC00FCF12E /* PBXTargetDependency */,
+			);
+			name = DinoStormTests;
+			productName = DinoStormTests;
+			productReference = D00865FD26E175EC00FCF12E /* DinoStormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D008660726E175EC00FCF12E /* DinoStormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008661726E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStormUITests" */;
+			buildPhases = (
+				D008660426E175EC00FCF12E /* Sources */,
+				D008660526E175EC00FCF12E /* Frameworks */,
+				D008660626E175EC00FCF12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D008660A26E175EC00FCF12E /* PBXTargetDependency */,
+			);
+			name = DinoStormUITests;
+			productName = DinoStormUITests;
+			productReference = D008660826E175EC00FCF12E /* DinoStormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00865DF26E175E800FCF12E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D00865E626E175E800FCF12E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D00865FC26E175EC00FCF12E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D00865E626E175E800FCF12E;
+					};
+					D008660726E175EC00FCF12E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D00865E626E175E800FCF12E;
+					};
+				};
+			};
+			buildConfigurationList = D00865E226E175E800FCF12E /* Build configuration list for PBXProject "DinoStorm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00865DE26E175E800FCF12E;
+			productRefGroup = D00865E826E175E800FCF12E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00865E626E175E800FCF12E /* DinoStorm */,
+				D00865FC26E175EC00FCF12E /* DinoStormTests */,
+				D008660726E175EC00FCF12E /* DinoStormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00865E526E175E800FCF12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00865F726E175EB00FCF12E /* LaunchScreen.storyboard in Resources */,
+				D00865F426E175EB00FCF12E /* Assets.xcassets in Resources */,
+				D00865F226E175E800FCF12E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00865FB26E175EC00FCF12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D008660626E175EC00FCF12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00865E326E175E800FCF12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00865EF26E175E800FCF12E /* HomeController.swift in Sources */,
+				D008661B26E1842B00FCF12E /* HomeView.swift in Sources */,
+				D00865EB26E175E800FCF12E /* AppDelegate.swift in Sources */,
+				D008661D26E1865200FCF12E /* WeatherDetails.swift in Sources */,
+				D00865ED26E175E800FCF12E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00865F926E175EC00FCF12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008660226E175EC00FCF12E /* DinoStormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D008660426E175EC00FCF12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008660D26E175EC00FCF12E /* DinoStormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00865FF26E175EC00FCF12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00865E626E175E800FCF12E /* DinoStorm */;
+			targetProxy = D00865FE26E175EC00FCF12E /* PBXContainerItemProxy */;
+		};
+		D008660A26E175EC00FCF12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00865E626E175E800FCF12E /* DinoStorm */;
+			targetProxy = D008660926E175EC00FCF12E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D00865F026E175E800FCF12E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00865F126E175E800FCF12E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D00865F526E175EB00FCF12E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00865F626E175EB00FCF12E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D008660F26E175EC00FCF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D008661026E175EC00FCF12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D008661226E175EC00FCF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStorm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D008661326E175EC00FCF12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStorm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D008661526E175EC00FCF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinoStorm.app/DinoStorm";
+			};
+			name = Debug;
+		};
+		D008661626E175EC00FCF12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinoStorm.app/DinoStorm";
+			};
+			name = Release;
+		};
+		D008661826E175EC00FCF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinoStorm;
+			};
+			name = Debug;
+		};
+		D008661926E175EC00FCF12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = DinoStormUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Alexis.DinoStormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DinoStorm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00865E226E175E800FCF12E /* Build configuration list for PBXProject "DinoStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008660F26E175EC00FCF12E /* Debug */,
+				D008661026E175EC00FCF12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D008661126E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008661226E175EC00FCF12E /* Debug */,
+				D008661326E175EC00FCF12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D008661426E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008661526E175EC00FCF12E /* Debug */,
+				D008661626E175EC00FCF12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D008661726E175EC00FCF12E /* Build configuration list for PBXNativeTarget "DinoStormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008661826E175EC00FCF12E /* Debug */,
+				D008661926E175EC00FCF12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D00865DF26E175E800FCF12E /* Project object */;
+}
