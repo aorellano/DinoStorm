@@ -14,6 +14,5 @@ struct Weather {
 enum WeatherType {
     case sunny
     case cloudy
-    case windy
     case rainy
 }

@@ -18,6 +18,7 @@
 		D008661B26E1842B00FCF12E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008661A26E1842B00FCF12E /* HomeView.swift */; };
 		D008661D26E1865200FCF12E /* WeatherDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008661C26E1865200FCF12E /* WeatherDetails.swift */; };
 		D008661F26E19B4E00FCF12E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008661E26E19B4E00FCF12E /* Weather.swift */; };
+		D008662426E1AD4A00FCF12E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008662326E1AD4A00FCF12E /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D008661A26E1842B00FCF12E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D008661C26E1865200FCF12E /* WeatherDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetails.swift; sourceTree = "<group>"; };
 		D008661E26E19B4E00FCF12E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D008662326E1AD4A00FCF12E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		D00865E926E175E800FCF12E /* DinoStorm */ = {
 			isa = PBXGroup;
 			children = (
+				D008662026E1AD2D00FCF12E /* Networking */,
 				D00865EA26E175E800FCF12E /* AppDelegate.swift */,
 				D00865EC26E175E800FCF12E /* SceneDelegate.swift */,
 				D00865EE26E175E800FCF12E /* HomeController.swift */,
@@ -135,6 +138,14 @@
 				D008660E26E175EC00FCF12E /* Info.plist */,
 			);
 			path = DinoStormUITests;
+			sourceTree = "<group>";
+		};
+		D008662026E1AD2D00FCF12E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D008662326E1AD4A00FCF12E /* APIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00865EF26E175E800FCF12E /* HomeController.swift in Sources */,
+				D008662426E1AD4A00FCF12E /* APIClient.swift in Sources */,
 				D008661B26E1842B00FCF12E /* HomeView.swift in Sources */,
 				D00865EB26E175E800FCF12E /* AppDelegate.swift in Sources */,
 				D008661D26E1865200FCF12E /* WeatherDetails.swift in Sources */,
