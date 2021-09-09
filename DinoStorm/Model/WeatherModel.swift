@@ -7,4 +7,5 @@
 
 struct WeatherModel: Decodable {
     let weather: [Weather]
+    let main: Main
 }

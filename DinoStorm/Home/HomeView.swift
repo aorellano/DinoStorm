@@ -78,7 +78,7 @@ class HomeView: UIView {
             weatherDetails.centerXAnchor.constraint(equalTo: weatherIcon.centerXAnchor),
             weatherDetails.leadingAnchor.constraint(equalTo: leadingAnchor),
             weatherDetails.trailingAnchor.constraint(equalTo: trailingAnchor),
-            weatherDetails.heightAnchor.constraint(equalToConstant: 215)
+            weatherDetails.heightAnchor.constraint(equalToConstant: 250)
         ])
     }
     

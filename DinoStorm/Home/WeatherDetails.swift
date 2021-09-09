@@ -11,6 +11,8 @@ class WeatherDetails: UIView {
     let cityName = UILabel()
     let weatherType = UILabel()
     let temperature = UILabel()
+    let tempMin = UILabel()
+    let tempMax = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,6 +20,8 @@ class WeatherDetails: UIView {
         setupCityName()
         setupWeatherType()
         setupTemperature()
+        setupTempMin()
+        setupTempMax()
     }
     
     private func setupCityName() {
@@ -45,6 +49,22 @@ class WeatherDetails: UIView {
         temperature.textAlignment = .center
         temperature.translatesAutoresizingMaskIntoConstraints = false
         positionTemperature()
+    }
+    
+    private func setupTempMin() {
+        tempMin.text = "L: 63"
+        tempMin.font = temperature.font.withSize(16)
+        tempMin.textColor = .white
+        tempMin.translatesAutoresizingMaskIntoConstraints = false
+        positionTempMin()
+    }
+    
+    private func setupTempMax() {
+        tempMax.text = "H: 80"
+        tempMax.font = temperature.font.withSize(16)
+        tempMax.textColor = .white
+        tempMax.translatesAutoresizingMaskIntoConstraints = false
+        positionTempMax()
     }
     
     private func positionCityName() {
@@ -76,6 +96,22 @@ class WeatherDetails: UIView {
             temperature.centerXAnchor.constraint(equalTo: centerXAnchor),
             temperature.widthAnchor.constraint(equalToConstant: 250),
             //temperature.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    private func positionTempMin() {
+        addSubview(tempMin)
+        NSLayoutConstraint.activate([
+            tempMin.topAnchor.constraint(equalTo: temperature.bottomAnchor),
+            tempMin.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -30)
+        ])
+    }
+    
+    private func positionTempMax() {
+        addSubview(tempMax)
+        NSLayoutConstraint.activate([
+            tempMax.topAnchor.constraint(equalTo: temperature.bottomAnchor),
+            tempMax.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30)
         ])
     }
     
