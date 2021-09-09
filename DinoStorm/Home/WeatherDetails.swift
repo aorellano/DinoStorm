@@ -18,30 +18,31 @@ class WeatherDetails: UIView {
         setupCityName()
         setupWeatherType()
         setupTemperature()
-        
-        backgroundColor = .blue
     }
     
     private func setupCityName() {
         cityName.text = "San Diego"
-        cityName.font = cityName.font.withSize(40)
+        cityName.font = cityName.font.withSize(32)
         cityName.textColor = .white
+        cityName.textAlignment = .center
         cityName.translatesAutoresizingMaskIntoConstraints = false
         positionCityName()
     }
     
     private func setupWeatherType() {
         weatherType.text = "Sunny"
-        weatherType.font = weatherType.font.withSize(40)
+        weatherType.font = weatherType.font.withSize(20)
         weatherType.textColor = .white
+        weatherType.textAlignment = .center
         weatherType.translatesAutoresizingMaskIntoConstraints = false
         positionWeatherType()
     }
     
     private func setupTemperature() {
         temperature.text = "75"
-        temperature.font = temperature.font.withSize(40)
+        temperature.font = temperature.font.withSize(125)
         temperature.textColor = .white
+        temperature.textAlignment = .center
         temperature.translatesAutoresizingMaskIntoConstraints = false
         positionTemperature()
     }
@@ -52,7 +53,7 @@ class WeatherDetails: UIView {
             cityName.topAnchor.constraint(equalTo: topAnchor),
             cityName.centerXAnchor.constraint(equalTo: centerXAnchor),
             cityName.widthAnchor.constraint(equalToConstant: 250),
-            cityName.heightAnchor.constraint(equalToConstant: 50)
+            //cityName.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -61,9 +62,9 @@ class WeatherDetails: UIView {
         
         NSLayoutConstraint.activate([
             weatherType.topAnchor.constraint(equalTo: cityName.bottomAnchor),
-            weatherType.centerXAnchor.constraint(equalTo: cityName.centerXAnchor),
+            weatherType.centerXAnchor.constraint(equalTo: centerXAnchor),
             weatherType.widthAnchor.constraint(equalToConstant: 250),
-            weatherType.heightAnchor.constraint(equalToConstant: 50)
+            //weatherType.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -72,9 +73,9 @@ class WeatherDetails: UIView {
         
         NSLayoutConstraint.activate([
             temperature.topAnchor.constraint(equalTo: weatherType.bottomAnchor),
-            temperature.centerXAnchor.constraint(equalTo: weatherType.centerXAnchor),
+            temperature.centerXAnchor.constraint(equalTo: centerXAnchor),
             temperature.widthAnchor.constraint(equalToConstant: 250),
-            temperature.heightAnchor.constraint(equalToConstant: 50)
+            //temperature.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     

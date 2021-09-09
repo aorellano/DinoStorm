@@ -8,9 +8,9 @@
 import UIKit
 
 class HomeView: UIView {
-    let weatherIcon = UIImageView()
+    var weatherIcon = UIImageView()
     let weatherDetails = WeatherDetails()
-    let dinoView = UIImageView()
+    var dinoView = UIImageView()
     let hourlyReport = UIView()
     var backgroundImageView = UIImageView()
     
@@ -19,7 +19,9 @@ class HomeView: UIView {
         super.init(frame: frame)
         
         setupBackground()
+        setupWeatherIcon()
         setupWeatherDetails()
+        setupDinoView()
     }
     
     private func setupBackground() {
@@ -29,11 +31,24 @@ class HomeView: UIView {
         positionBackgroundImage()
     }
     
+    private func setupWeatherIcon() {
+        let icon = UIImage(named: "Sun")!
+        weatherIcon = UIImageView(image: icon)
+        weatherIcon.translatesAutoresizingMaskIntoConstraints = false
+        positionWeatherIcon()
+    }
+    
     
     private func setupWeatherDetails() {
-        addSubview(weatherDetails)
         weatherDetails.translatesAutoresizingMaskIntoConstraints = false
         positionWeatherDetails()
+    }
+    
+    private func setupDinoView() {
+        let dino = UIImage(named: "Dino")!
+        dinoView = UIImageView(image: dino)
+        dinoView.translatesAutoresizingMaskIntoConstraints = false
+        positionDinoView()
     }
     
     private func positionBackgroundImage() {
@@ -46,11 +61,34 @@ class HomeView: UIView {
         ])
     }
     
-    private func positionWeatherDetails() {
+    private func positionWeatherIcon() {
+        addSubview(weatherIcon)
         NSLayoutConstraint.activate([
-            weatherDetails.centerYAnchor.constraint(equalTo: centerYAnchor),
+            weatherIcon.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 30),
+            weatherIcon.centerXAnchor.constraint(equalTo: centerXAnchor),
+            weatherIcon.heightAnchor.constraint(equalToConstant: 175),
+            weatherIcon.widthAnchor.constraint(equalToConstant: 175)
+        ])
+    }
+    
+    private func positionWeatherDetails() {
+        addSubview(weatherDetails)
+        NSLayoutConstraint.activate([
+            weatherDetails.topAnchor.constraint(equalTo: weatherIcon.bottomAnchor, constant: 40),
+            weatherDetails.centerXAnchor.constraint(equalTo: weatherIcon.centerXAnchor),
             weatherDetails.leadingAnchor.constraint(equalTo: leadingAnchor),
             weatherDetails.trailingAnchor.constraint(equalTo: trailingAnchor),
+            weatherDetails.heightAnchor.constraint(equalToConstant: 215)
+        ])
+    }
+    
+    private func positionDinoView() {
+        addSubview(dinoView)
+        NSLayoutConstraint.activate([
+            dinoView.topAnchor.constraint(equalTo: weatherDetails.bottomAnchor, constant: 10),
+            dinoView.centerXAnchor.constraint(equalTo: weatherDetails.centerXAnchor, constant: 10),
+            dinoView.heightAnchor.constraint(equalToConstant: 250),
+            dinoView.widthAnchor.constraint(equalToConstant: 200)
         ])
     }
     
