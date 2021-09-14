@@ -17,11 +17,15 @@ class ViewController: UIViewController {
         fetchCurrentWeather()
     }
     
+
     func fetchCurrentWeather() {
         client.getCurrentWeather(from: .city(name: "London")) { result in
             switch result {
             case .success(let weather):
-                print(weather)
+                DispatchQueue.main.async {
+                    let weatherViewModel = WeatherViewModel(weatherModel: weather)
+                    self.homeView.updateWeather(with: weatherViewModel)
+               }
             case .failure(let error):
                 print(error)
             }
@@ -29,13 +33,16 @@ class ViewController: UIViewController {
     }
     
     override func loadView() {
-        view = HomeView()
+        view = homeView
+        print("second")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+        
     }
 
 
 }
+
 

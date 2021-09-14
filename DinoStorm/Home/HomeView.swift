@@ -9,11 +9,10 @@ import UIKit
 
 class HomeView: UIView {
     var weatherIcon = UIImageView()
-    let weatherDetails = WeatherDetails()
+    var weatherDetails = WeatherDetails()
     var dinoView = UIImageView()
     let hourlyReport = UIView()
     var backgroundImageView = UIImageView()
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +21,14 @@ class HomeView: UIView {
         setupWeatherIcon()
         setupWeatherDetails()
         setupDinoView()
+    }
+    
+    func updateWeather(with model: WeatherViewModel) {
+        weatherDetails.cityName.text = model.name
+        weatherDetails.weatherType.text = model.weatherType
+        weatherDetails.temperature.text = "\(model.temperature)"
+        weatherDetails.tempMin.text = "L: \(model.lowTemp)"
+        weatherDetails.tempMax.text = "H: \(model.highTemp)"
     }
     
     private func setupBackground() {
@@ -42,6 +49,7 @@ class HomeView: UIView {
     private func setupWeatherDetails() {
         weatherDetails.translatesAutoresizingMaskIntoConstraints = false
         positionWeatherDetails()
+        
     }
     
     private func setupDinoView() {

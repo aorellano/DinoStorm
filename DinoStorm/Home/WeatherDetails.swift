@@ -8,11 +8,11 @@
 import UIKit
 
 class WeatherDetails: UIView {
-    let cityName = UILabel()
+    var cityName = UILabel()
     let weatherType = UILabel()
-    let temperature = UILabel()
-    let tempMin = UILabel()
-    let tempMax = UILabel()
+    var temperature = UILabel()
+    var tempMin = UILabel()
+    var tempMax = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +25,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupCityName() {
-        cityName.text = "San Diego"
+        cityName.text = ""
         cityName.font = cityName.font.withSize(32)
         cityName.textColor = .white
         cityName.textAlignment = .center
@@ -34,7 +34,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupWeatherType() {
-        weatherType.text = "Sunny"
+        weatherType.text = ""
         weatherType.font = weatherType.font.withSize(20)
         weatherType.textColor = .white
         weatherType.textAlignment = .center
@@ -43,7 +43,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupTemperature() {
-        temperature.text = "75"
+        temperature.text = ""
         temperature.font = temperature.font.withSize(125)
         temperature.textColor = .white
         temperature.textAlignment = .center
@@ -52,7 +52,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupTempMin() {
-        tempMin.text = "L: 63"
+        tempMin.text = "L: "
         tempMin.font = temperature.font.withSize(16)
         tempMin.textColor = .white
         tempMin.translatesAutoresizingMaskIntoConstraints = false
@@ -60,7 +60,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupTempMax() {
-        tempMax.text = "H: 80"
+        tempMax.text = "H: "
         tempMax.font = temperature.font.withSize(16)
         tempMax.textColor = .white
         tempMax.translatesAutoresizingMaskIntoConstraints = false
@@ -84,18 +84,15 @@ class WeatherDetails: UIView {
             weatherType.topAnchor.constraint(equalTo: cityName.bottomAnchor),
             weatherType.centerXAnchor.constraint(equalTo: centerXAnchor),
             weatherType.widthAnchor.constraint(equalToConstant: 250),
-            //weatherType.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
     private func positionTemperature() {
         addSubview(temperature)
-        
         NSLayoutConstraint.activate([
             temperature.topAnchor.constraint(equalTo: weatherType.bottomAnchor),
             temperature.centerXAnchor.constraint(equalTo: centerXAnchor),
             temperature.widthAnchor.constraint(equalToConstant: 250),
-            //temperature.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -103,7 +100,7 @@ class WeatherDetails: UIView {
         addSubview(tempMin)
         NSLayoutConstraint.activate([
             tempMin.topAnchor.constraint(equalTo: temperature.bottomAnchor),
-            tempMin.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -30)
+            tempMin.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -40)
         ])
     }
     
@@ -111,12 +108,11 @@ class WeatherDetails: UIView {
         addSubview(tempMax)
         NSLayoutConstraint.activate([
             tempMax.topAnchor.constraint(equalTo: temperature.bottomAnchor),
-            tempMax.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30)
+            tempMax.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 40)
         ])
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
