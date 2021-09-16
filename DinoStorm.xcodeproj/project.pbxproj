@@ -25,6 +25,7 @@
 		D008662F26E1EC7400FCF12E /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008662E26E1EC7400FCF12E /* WeatherModel.swift */; };
 		D008663126EAB08000FCF12E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663026EAB08000FCF12E /* Main.swift */; };
 		D008663326EAF75E00FCF12E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663226EAF75E00FCF12E /* WeatherViewModel.swift */; };
+		D008663526F3C4B300FCF12E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663426F3C4B300FCF12E /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D008662E26E1EC7400FCF12E /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		D008663026EAB08000FCF12E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		D008663226EAF75E00FCF12E /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		D008663426F3C4B300FCF12E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				D00865F326E175EB00FCF12E /* Assets.xcassets */,
 				D00865F526E175EB00FCF12E /* LaunchScreen.storyboard */,
 				D00865F826E175EB00FCF12E /* Info.plist */,
+				D008663426F3C4B300FCF12E /* Double+Extension.swift */,
 			);
 			path = DinoStorm;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				D00865EF26E175E800FCF12E /* HomeController.swift in Sources */,
 				D008663326EAF75E00FCF12E /* WeatherViewModel.swift in Sources */,
+				D008663526F3C4B300FCF12E /* Double+Extension.swift in Sources */,
 				D008662A26E1C8C800FCF12E /* Endpoint.swift in Sources */,
 				D008662426E1AD4A00FCF12E /* APIClient.swift in Sources */,
 				D008662F26E1EC7400FCF12E /* WeatherModel.swift in Sources */,

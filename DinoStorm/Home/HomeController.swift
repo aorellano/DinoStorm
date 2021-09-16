@@ -34,15 +34,12 @@ class ViewController: UIViewController {
     
     override func loadView() {
         view = homeView
-        print("second")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
         
     }
-
-
 }
 
 

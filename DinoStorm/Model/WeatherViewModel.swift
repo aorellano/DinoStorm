@@ -19,16 +19,16 @@ struct WeatherViewModel {
         return weather?.weather.first?.main ?? "No Description Found"
     }
     
-    var temperature: Double {
-        return weather?.main.temp ?? 0
+    var temperature: String {
+        return String((weather?.main.temp ?? 0).kelvinToFahrenheit)
     }
     
-    var lowTemp: Double {
-        return weather?.main.temp_min ?? 0
+    var lowTemp: String {
+        return String((weather?.main.temp_min ?? 0).kelvinToFahrenheit)
     }
     
-    var highTemp: Double {
-        return weather?.main.temp_min ?? 0
+    var highTemp: String {
+        return String((weather?.main.temp_min ?? 0).kelvinToFahrenheit)
     }
     
     init(weatherModel: WeatherModel) {
