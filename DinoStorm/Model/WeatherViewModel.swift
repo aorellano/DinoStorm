@@ -35,8 +35,3 @@ struct WeatherViewModel {
         self.weather = weatherModel
     }
 }
-
-extension WeatherViewModel {
-    
-}
-

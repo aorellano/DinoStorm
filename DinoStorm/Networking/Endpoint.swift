@@ -31,16 +31,14 @@ extension Endpoint {
     }
 }
 
-enum WeatherForecast {
+enum LocationType {
     case city(name: String)
     case id(city: String)
     case coordinates(lat: String, lon: String)
     case zip(code: String, country: String?)
-    //case hourly
-    //case weekly
 }
 
-extension WeatherForecast: Endpoint {
+extension LocationType: Endpoint {
     var base: URL {
         return URL(string: "https://api.openweathermap.org/data/2.5/weather")!
     }
@@ -64,8 +62,10 @@ extension WeatherForecast: Endpoint {
             case .id: return [
                 URLQueryItem(name: "appid", value: apiKey),
             ]
-            case .coordinates: return [
+            case .coordinates(let lat, let lon): return [
                 URLQueryItem(name: "appid", value: apiKey),
+                URLQueryItem(name: "lat", value: lat),
+                URLQueryItem(name: "lon", value: lon)
             ]
             case .zip: return [
                 URLQueryItem(name: "appid", value: apiKey),

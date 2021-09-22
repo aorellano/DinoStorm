@@ -11,4 +11,6 @@ extension Double {
     var kelvinToFahrenheit: Int {
         return Int(((9.0 / 5) * (self - 273) + 32).rounded(.up))
     }
+    
+
 }

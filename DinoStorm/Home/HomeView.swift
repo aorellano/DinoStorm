@@ -26,7 +26,7 @@ class HomeView: UIView {
     func updateWeather(with model: WeatherViewModel) {
         weatherDetails.cityName.text = model.name
         weatherDetails.weatherType.text = model.weatherType
-        weatherDetails.temperature.text = "\(model.temperature)"
+        weatherDetails.temperature.text = "\(model.temperature)" + "°"
         weatherDetails.tempMin.text = "L: \(model.lowTemp)"
         weatherDetails.tempMax.text = "H: \(model.highTemp)"
     }

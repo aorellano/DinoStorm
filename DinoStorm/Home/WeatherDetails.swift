@@ -52,7 +52,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupTempMin() {
-        tempMin.text = "L: "
+        tempMin.text = ""
         tempMin.font = temperature.font.withSize(16)
         tempMin.textColor = .white
         tempMin.translatesAutoresizingMaskIntoConstraints = false
@@ -60,7 +60,7 @@ class WeatherDetails: UIView {
     }
     
     private func setupTempMax() {
-        tempMax.text = "H: "
+        tempMax.text = ""
         tempMax.font = temperature.font.withSize(16)
         tempMax.textColor = .white
         tempMax.translatesAutoresizingMaskIntoConstraints = false

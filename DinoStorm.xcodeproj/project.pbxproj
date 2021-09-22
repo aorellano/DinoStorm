@@ -26,6 +26,13 @@
 		D008663126EAB08000FCF12E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663026EAB08000FCF12E /* Main.swift */; };
 		D008663326EAF75E00FCF12E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663226EAF75E00FCF12E /* WeatherViewModel.swift */; };
 		D008663526F3C4B300FCF12E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008663426F3C4B300FCF12E /* Double+Extension.swift */; };
+		D008663D26FBB47F00FCF12E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008663C26FBB47F00FCF12E /* WidgetKit.framework */; };
+		D008663F26FBB47F00FCF12E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008663E26FBB47F00FCF12E /* SwiftUI.framework */; };
+		D008664226FBB47F00FCF12E /* DinoStorm_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008664126FBB47F00FCF12E /* DinoStorm_Widget.swift */; };
+		D008664526FBB48400FCF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D008664426FBB48400FCF12E /* Assets.xcassets */; };
+		D008664726FBB48400FCF12E /* DinoStorm_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D008664326FBB47F00FCF12E /* DinoStorm_Widget.intentdefinition */; };
+		D008664826FBB48400FCF12E /* DinoStorm_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D008664326FBB47F00FCF12E /* DinoStorm_Widget.intentdefinition */; };
+		D008664B26FBB48400FCF12E /* DinoStorm-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D008663A26FBB47F00FCF12E /* DinoStorm-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +50,28 @@
 			remoteGlobalIDString = D00865E626E175E800FCF12E;
 			remoteInfo = DinoStorm;
 		};
+		D008664926FBB48400FCF12E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00865DF26E175E800FCF12E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D008663926FBB47E00FCF12E;
+			remoteInfo = "DinoStorm-WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D008664F26FBB48400FCF12E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D008664B26FBB48400FCF12E /* DinoStorm-WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D00865E726E175E800FCF12E /* DinoStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +99,13 @@
 		D008663026EAB08000FCF12E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		D008663226EAF75E00FCF12E /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D008663426F3C4B300FCF12E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		D008663A26FBB47F00FCF12E /* DinoStorm-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DinoStorm-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008663C26FBB47F00FCF12E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D008663E26FBB47F00FCF12E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D008664126FBB47F00FCF12E /* DinoStorm_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoStorm_Widget.swift; sourceTree = "<group>"; };
+		D008664326FBB47F00FCF12E /* DinoStorm_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DinoStorm_Widget.intentdefinition; sourceTree = "<group>"; };
+		D008664426FBB48400FCF12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D008664626FBB48400FCF12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +130,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D008663726FBB47E00FCF12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008663F26FBB47F00FCF12E /* SwiftUI.framework in Frameworks */,
+				D008663D26FBB47F00FCF12E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,6 +147,8 @@
 			children = (
 				D00865E926E175E800FCF12E /* DinoStorm */,
 				D008660026E175EC00FCF12E /* DinoStormTests */,
+				D008664026FBB47F00FCF12E /* DinoStorm-Widget */,
+				D008663B26FBB47F00FCF12E /* Frameworks */,
 				D00865E826E175E800FCF12E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +159,7 @@
 				D00865E726E175E800FCF12E /* DinoStorm.app */,
 				D00865FD26E175EC00FCF12E /* DinoStormTests.xctest */,
 				D008660826E175EC00FCF12E /* DinoStormUITests.xctest */,
+				D008663A26FBB47F00FCF12E /* DinoStorm-WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +240,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D008663B26FBB47F00FCF12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D008663C26FBB47F00FCF12E /* WidgetKit.framework */,
+				D008663E26FBB47F00FCF12E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D008664026FBB47F00FCF12E /* DinoStorm-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D008664126FBB47F00FCF12E /* DinoStorm_Widget.swift */,
+				D008664326FBB47F00FCF12E /* DinoStorm_Widget.intentdefinition */,
+				D008664426FBB48400FCF12E /* Assets.xcassets */,
+				D008664626FBB48400FCF12E /* Info.plist */,
+			);
+			path = "DinoStorm-Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,10 +270,12 @@
 				D00865E326E175E800FCF12E /* Sources */,
 				D00865E426E175E800FCF12E /* Frameworks */,
 				D00865E526E175E800FCF12E /* Resources */,
+				D008664F26FBB48400FCF12E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D008664A26FBB48400FCF12E /* PBXTargetDependency */,
 			);
 			name = DinoStorm;
 			productName = DinoStorm;
@@ -249,6 +318,23 @@
 			productReference = D008660826E175EC00FCF12E /* DinoStormUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D008663926FBB47E00FCF12E /* DinoStorm-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008664C26FBB48400FCF12E /* Build configuration list for PBXNativeTarget "DinoStorm-WidgetExtension" */;
+			buildPhases = (
+				D008663626FBB47E00FCF12E /* Sources */,
+				D008663726FBB47E00FCF12E /* Frameworks */,
+				D008663826FBB47E00FCF12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DinoStorm-WidgetExtension";
+			productName = "DinoStorm-WidgetExtension";
+			productReference = D008663A26FBB47F00FCF12E /* DinoStorm-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -269,6 +355,9 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = D00865E626E175E800FCF12E;
 					};
+					D008663926FBB47E00FCF12E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = D00865E226E175E800FCF12E /* Build configuration list for PBXProject "DinoStorm" */;
@@ -287,6 +376,7 @@
 				D00865E626E175E800FCF12E /* DinoStorm */,
 				D00865FC26E175EC00FCF12E /* DinoStormTests */,
 				D008660726E175EC00FCF12E /* DinoStormUITests */,
+				D008663926FBB47E00FCF12E /* DinoStorm-WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -316,6 +406,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D008663826FBB47E00FCF12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008664526FBB48400FCF12E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -332,6 +430,7 @@
 				D008661B26E1842B00FCF12E /* HomeView.swift in Sources */,
 				D00865EB26E175E800FCF12E /* AppDelegate.swift in Sources */,
 				D008663126EAB08000FCF12E /* Main.swift in Sources */,
+				D008664826FBB48400FCF12E /* DinoStorm_Widget.intentdefinition in Sources */,
 				D008662C26E1E87600FCF12E /* WeatherClient.swift in Sources */,
 				D008661D26E1865200FCF12E /* WeatherDetails.swift in Sources */,
 				D008661F26E19B4E00FCF12E /* Weather.swift in Sources */,
@@ -356,6 +455,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D008663626FBB47E00FCF12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008664726FBB48400FCF12E /* DinoStorm_Widget.intentdefinition in Sources */,
+				D008664226FBB47F00FCF12E /* DinoStorm_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -368,6 +476,11 @@
 			isa = PBXTargetDependency;
 			target = D00865E626E175E800FCF12E /* DinoStorm */;
 			targetProxy = D008660926E175EC00FCF12E /* PBXContainerItemProxy */;
+		};
+		D008664A26FBB48400FCF12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D008663926FBB47E00FCF12E /* DinoStorm-WidgetExtension */;
+			targetProxy = D008664926FBB48400FCF12E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,6 +623,7 @@
 		D008661226E175EC00FCF12E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +644,7 @@
 		D008661326E175EC00FCF12E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +746,48 @@
 			};
 			name = Release;
 		};
+		D008664D26FBB48400FCF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = "DinoStorm-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexis.DinoStorm.DinoStorm-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D008664E26FBB48400FCF12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7297N2DPU;
+				INFOPLIST_FILE = "DinoStorm-Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Alexis.DinoStorm.DinoStorm-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -666,6 +823,15 @@
 			buildConfigurations = (
 				D008661826E175EC00FCF12E /* Debug */,
 				D008661926E175EC00FCF12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D008664C26FBB48400FCF12E /* Build configuration list for PBXNativeTarget "DinoStorm-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008664D26FBB48400FCF12E /* Debug */,
+				D008664E26FBB48400FCF12E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

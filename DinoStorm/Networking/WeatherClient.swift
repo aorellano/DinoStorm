@@ -18,7 +18,7 @@ class WeatherClient: APIClient {
         self.init(configuration: .default)
     }
     
-    func getCurrentWeather(from type: WeatherForecast, completion: @escaping (Result<WeatherModel, APIError>) -> Void ) {
+    func getCurrentWeather(from type: LocationType, completion: @escaping (Result<WeatherModel, APIError>) -> Void ) {
         
         let request = type.request
         fetch(with: request, decode: { json -> WeatherModel? in
