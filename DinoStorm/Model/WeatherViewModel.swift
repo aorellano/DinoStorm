@@ -9,9 +9,12 @@ import UIKit
 
 struct WeatherViewModel {
     let client = WeatherClient()
+    let userDefaults = UserDefaults(suiteName: "group.dinostorm")
+    
     private var weather: WeatherModel?
     
     var name: String {
+        userDefaults?.setValue(weather?.name, forKey: "cityName")
         return weather?.name ?? "No Location Found"
     }
     
@@ -20,6 +23,7 @@ struct WeatherViewModel {
     }
     
     var temperature: String {
+        userDefaults?.setValue((weather?.main.temp ?? 0).kelvinToFahrenheit, forKey: "temp")
         return String((weather?.main.temp ?? 0).kelvinToFahrenheit)
     }
     
@@ -28,8 +32,9 @@ struct WeatherViewModel {
     }
     
     var highTemp: String {
-        return String((weather?.main.temp_min ?? 0).kelvinToFahrenheit)
+        return String((weather?.main.temp_max ?? 0).kelvinToFahrenheit)
     }
+    
     
     init(weatherModel: WeatherModel) {
         self.weather = weatherModel

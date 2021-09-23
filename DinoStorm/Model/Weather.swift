@@ -17,3 +17,7 @@ enum WeatherType {
     case cloudy
     case rainy
 }
+
+//retrieve weather information
+//from that weather information determine weather type
+//if weather type sunny diplay sunny background/ dinosaur

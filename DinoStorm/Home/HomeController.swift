@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import WidgetKit
 
 class ViewController: UIViewController {
     let homeView = HomeView()
@@ -58,6 +59,7 @@ extension ViewController: CLLocationManagerDelegate {
             print("authorization")
             let lat = String(Int(locationManager?.location?.coordinate.latitude ?? 0))
             let lon = String(Int(locationManager?.location?.coordinate.longitude ?? 0))
+            fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
         }
     }
     
@@ -65,10 +67,15 @@ extension ViewController: CLLocationManagerDelegate {
         if let location = locations.last {
             print("Location has changed")
             currentLocation = location
-            let lat = String(Int(locationManager?.location?.coordinate.latitude ?? 0))
-            let lon = String(Int(locationManager?.location?.coordinate.longitude ?? 0))
-            fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
+            getWeather()
+            WidgetCenter.shared.reloadAllTimelines()
         }
+    }
+    
+    private func getWeather() {
+        let lat = String(Int(locationManager?.location?.coordinate.latitude ?? 0))
+        let lon = String(Int(locationManager?.location?.coordinate.longitude ?? 0))
+        fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
     }
 }
 
