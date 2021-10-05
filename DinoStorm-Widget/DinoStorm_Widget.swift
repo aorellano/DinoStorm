@@ -73,7 +73,7 @@ struct DinoStorm_WidgetEntryView : View {
                 Image("Dino")
                     .resizable()
                     .frame(width: 60, height: 70)
-                Text("75°")
+                Text("\(entry.temp)"+"°")
                     .foregroundColor(.white)
                     .font(.system(size: 30))
             }

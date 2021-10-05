@@ -23,7 +23,7 @@ struct WeatherViewModel {
     }
     
     var temperature: String {
-        userDefaults?.setValue((weather?.main.temp ?? 0).kelvinToFahrenheit, forKey: "temp")
+        userDefaults?.setValue(String((weather?.main.temp ?? 0).kelvinToFahrenheit), forKey: "temp")
         return String((weather?.main.temp ?? 0).kelvinToFahrenheit)
     }
     

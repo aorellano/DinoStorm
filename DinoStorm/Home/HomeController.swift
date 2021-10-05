@@ -57,8 +57,9 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedAlways {
             print("authorization")
-            let lat = String(Int(locationManager?.location?.coordinate.latitude ?? 0))
-            let lon = String(Int(locationManager?.location?.coordinate.longitude ?? 0))
+            let lat = String(locationManager?.location?.coordinate.latitude ?? 0)
+            let lon = String(locationManager?.location?.coordinate.longitude ?? 0)
+            
             fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
         }
     }
@@ -73,8 +74,11 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
     private func getWeather() {
-        let lat = String(Int(locationManager?.location?.coordinate.latitude ?? 0))
-        let lon = String(Int(locationManager?.location?.coordinate.longitude ?? 0))
+        let lat = String(locationManager?.location?.coordinate.latitude ?? 0)
+        let lon = String(locationManager?.location?.coordinate.longitude ?? 0)
+        print(locationManager?.location?.coordinate.latitude ?? 0)
+        print(locationManager?.location?.coordinate.longitude ?? 0)
+        print(lon)
         fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
     }
 }
