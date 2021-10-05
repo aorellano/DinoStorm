@@ -79,6 +79,14 @@ extension ViewController: CLLocationManagerDelegate {
         print(locationManager?.location?.coordinate.latitude ?? 0)
         print(locationManager?.location?.coordinate.longitude ?? 0)
         print(lon)
+        let calendar = Calendar.current
+        
+        print(calendar.component(.hour, from: (locationManager?.location!.timestamp)!))
+        print(locationManager?.location?.timestamp)
+        print(Date())
+        print(calendar.component(.hour, from: Date()))
+        
+       
         fetchCurrentWeather(from: LocationType.coordinates(lat: lat, lon: lon))
     }
 }

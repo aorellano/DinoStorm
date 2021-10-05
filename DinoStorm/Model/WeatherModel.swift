@@ -9,4 +9,5 @@ struct WeatherModel: Decodable {
     let name: String
     let weather: [Weather]
     let main: Main
+    let sys: Sys
 }

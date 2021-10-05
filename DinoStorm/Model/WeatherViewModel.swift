@@ -35,6 +35,31 @@ struct WeatherViewModel {
         return String((weather?.main.temp_max ?? 0).kelvinToFahrenheit)
     }
     
+    var background: UIImage {
+        let date = Date()
+        let calendar = Calendar.current
+        let sunrise = Date(timeIntervalSince1970: (weather?.sys.sunrise)!)
+        print(Date(timeIntervalSince1970: (weather?.sys.sunrise)!))
+        print(date.compare(sunrise).rawValue)
+        
+        let hour = calendar.component(.hour, from: date)
+       
+        if weather?.weather.first?.main == "Clouds" {
+            if hour < 7 {
+                return UIImage(named: "CloudyBackground")!
+            } else {
+                return UIImage(named: "NightCloudy")!
+            }
+        } else {
+            if hour < 7 {
+                return UIImage(named: "SunnyBackground")!
+            } else {
+                return UIImage(named: "NightClear")!
+            }
+            
+        }
+    }
+    
     
     init(weatherModel: WeatherModel) {
         self.weather = weatherModel

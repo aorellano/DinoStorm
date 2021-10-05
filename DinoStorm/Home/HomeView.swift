@@ -12,7 +12,7 @@ class HomeView: UIView {
     var weatherDetails = WeatherDetails()
     var dinoView = UIImageView()
     let hourlyReport = UIView()
-    var backgroundImageView = UIImageView()
+    lazy var backgroundImageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,11 +29,11 @@ class HomeView: UIView {
         weatherDetails.temperature.text = "\(model.temperature)" + "°"
         weatherDetails.tempMin.text = "L: \(model.lowTemp)"
         weatherDetails.tempMax.text = "H: \(model.highTemp)"
+        backgroundImageView.image = model.background
     }
     
     private func setupBackground() {
-        let background = UIImage(named: "SunnyBackground")!
-        backgroundImageView = UIImageView(image: background)
+        backgroundImageView = UIImageView(image: UIImage(named: "SunnyBackground"))
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         positionBackgroundImage()
     }
