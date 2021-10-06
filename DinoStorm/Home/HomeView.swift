@@ -30,6 +30,7 @@ class HomeView: UIView {
         weatherDetails.tempMin.text = "L: \(model.lowTemp)"
         weatherDetails.tempMax.text = "H: \(model.highTemp)"
         backgroundImageView.image = model.background
+        weatherIcon.image = model.icon
     }
     
     private func setupBackground() {

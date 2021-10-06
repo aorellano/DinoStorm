@@ -36,30 +36,42 @@ struct WeatherViewModel {
     }
     
     var background: UIImage {
-        let date = Date()
-        let calendar = Calendar.current
-        let sunrise = Date(timeIntervalSince1970: (weather?.sys.sunrise)!)
-        print(Date(timeIntervalSince1970: (weather?.sys.sunrise)!))
-        print(date.compare(sunrise).rawValue)
-        
-        let hour = calendar.component(.hour, from: date)
-       
-        if weather?.weather.first?.main == "Clouds" {
-            if hour < 7 {
-                return UIImage(named: "CloudyBackground")!
-            } else {
-                return UIImage(named: "NightCloudy")!
-            }
-        } else {
-            if hour < 7 {
-                return UIImage(named: "SunnyBackground")!
-            } else {
-                return UIImage(named: "NightClear")!
-            }
-            
-        }
+        let background = currentWeatherConditions("background")
+        return background
     }
     
+    var icon: UIImage {
+        let currentWeather = currentWeatherConditions("icon")
+        return currentWeather
+    }
+    
+    func currentWeatherConditions(_ type: String) -> UIImage {
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        
+        if type == "background" {
+            if weather?.weather.first?.main == "Clouds" {
+                if hour < 18 {
+                    return UIImage(named: "CloudyBackground")!
+                } else {
+                    return UIImage(named: "NightCloudy")!
+                }
+            } else {
+                if hour < 18 {
+                    return UIImage(named: "SunnyBackground")!
+                } else {
+                    return UIImage(named: "NightClear")!
+                }
+            }
+        } else {
+            if hour < 18 {
+                return UIImage(named: "Sun")!
+            } else {
+                return UIImage(named: "Moon")!
+            }
+        }
+    }
     
     init(weatherModel: WeatherModel) {
         self.weather = weatherModel
